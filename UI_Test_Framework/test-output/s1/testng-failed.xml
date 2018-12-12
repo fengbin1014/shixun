@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [s1]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="testCase(failed)">
+    <classes>
+      <class name="testCase.ReturnCardTest">
+        <methods>
+          <include name="ReturnCard"/>
+          <include name="doAfterMethod"/>
+        </methods>
+      </class> <!-- testCase.ReturnCardTest -->
+      <class name="testCase.TopTest">
+        <methods>
+          <include name="Top"/>
+          <include name="doAfterMethod"/>
+        </methods>
+      </class> <!-- testCase.TopTest -->
+      <class name="testCase.CustomTest">
+        <methods>
+          <include name="CustomDo"/>
+          <include name="doAfterMethod"/>
+        </methods>
+      </class> <!-- testCase.CustomTest -->
+      <class name="testCase.bk_ranzhiTest">
+        <methods>
+          <include name="LoginRanZhi"/>
+          <include name="doAfterMethod"/>
+        </methods>
+      </class> <!-- testCase.bk_ranzhiTest -->
+      <class name="testCase.SearchbkTest">
+        <methods>
+          <include name="SearchBk"/>
+          <include name="doAfterMethod"/>
+        </methods>
+      </class> <!-- testCase.SearchbkTest -->
+      <class name="testCase.DepartmentTest">
+        <methods>
+          <include name="LoginRanZhi"/>
+          <include name="doAfterMethod"/>
+        </methods>
+      </class> <!-- testCase.DepartmentTest -->
+      <class name="testCase.ThemeTest">
+        <methods>
+          <include name="SwitchThemeTest"/>
+          <include name="doAfterMethod"/>
+        </methods>
+      </class> <!-- testCase.ThemeTest -->
+      <class name="testCase.AnnouncementTest">
+        <methods>
+          <include name="AouncementDelete"/>
+          <include name="doAfterMethod"/>
+        </methods>
+      </class> <!-- testCase.AnnouncementTest -->
+    </classes>
+  </test> <!-- testCase(failed) -->
+</suite> <!-- Failed suite [s1] -->
